@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-#import os
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -107,10 +107,10 @@ WSGI_APPLICATION = 'core.wsgi.app'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'twixie',
-        'USER':'postgres',
-        'PASSWORD':'gameover',
-        'HOST':'localhost',
+        'NAME': 'verceldb',
+        'USER':'default',
+        'PASSWORD':'r5SDAkvuN0jR',
+        'HOST':'ep-black-bar-039461-pooler.us-east-1.postgres.vercel-storage.com',
         'PORT':'5432'
     }
 }
@@ -175,6 +175,6 @@ AUTH_USER_MODEL = "user.User"
 CORS_ALLOW_ALL_ORIGINS = True
 
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-# MEDIA_URLS ='/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+MEDIA_URLS ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
