@@ -110,7 +110,7 @@ DATABASES = {
         'NAME': 'verceldb',
         'USER':'default',
         'PASSWORD':'r5SDAkvuN0jR',
-        'HOST':'ep-black-bar-039461-pooler.us-east-1.postgres.vercel-storage.com',
+        'HOST':'postgres://default:r5SDAkvuN0jR@ep-black-bar-039461-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb',
         'PORT':'5432'
     }
 }
